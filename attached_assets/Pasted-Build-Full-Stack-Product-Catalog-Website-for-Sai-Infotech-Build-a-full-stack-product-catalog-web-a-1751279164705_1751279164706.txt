@@ -1,0 +1,123 @@
+Build Full-Stack Product Catalog Website for "Sai Infotech"
+Build a full-stack product catalog web application for a computer and electronics service shop called "Sai Infotech".
+
+🎯 Goal:
+Public users can view products without logging in.
+
+Admin can perform full CRUD operations on products after login.
+
+Admin can upload multiple images per product (stored on Cloudinary).
+
+Each product should have a “Contact on WhatsApp” button pre-filled with the shop number: +91 7411180528.
+
+Good UI/UX using Tailwind CSS.
+
+Organize code in frontend/ and backend/ folders.
+
+🧱 Tech Stack:
+✅ Frontend
+React 18 with Vite
+
+Tailwind CSS for styling
+
+React Hook Form (forms)
+
+TanStack Query (data fetching)
+
+Wouter or React Router DOM for routing
+
+✅ Backend
+Node.js + Express.js
+
+PostgreSQL (hosted on Neon)
+
+Drizzle ORM (or Prisma)
+
+JWT authentication for admin login
+
+Bcrypt for password hashing
+
+Multer for file handling, and Cloudinary for image uploads
+
+✅ Hosting & Services
+Frontend: Vercel or Netlify
+
+Backend: Render or Railway
+
+Database: Neon PostgreSQL
+
+Image Hosting: Cloudinary
+
+🔐 Admin Panel Features:
+Admin Login via /admin/login
+
+Auth with username/password and JWT token stored in HTTP-only cookie or localStorage.
+
+Admin Dashboard /admin/products
+
+Add new product:
+
+Name
+
+Description
+
+Price
+
+WhatsApp link
+
+Upload multiple images
+
+Edit product details
+
+Delete product
+
+View product list
+
+🌐 Public Website Features (No Login Needed)
+/ – Homepage with product catalog
+
+Product Card displays:
+
+Product name
+
+Description
+
+Price
+
+Carousel of uploaded images
+
+Button: "Inquire on WhatsApp"
+
+Button links to:
+https://wa.me/917411180528?text=I'm%20interested%20in%20your%20product:%20[Product%20Name]
+
+📁 Folder Structure
+css
+Copy
+Edit
+sai-infotech-catalog/
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── uploads/
+│   ├── app.js
+│   └── .env
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── api/
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   └── tailwind.config.js
+└── README.md
+💡 Design Tips:
+Use shadcn/ui components with Tailwind for a clean, modern UI.
+
+Admin panel should be form-based with table/list of products.
+
+Public site should have a product grid layout, clean navigation, and mobile-friendly layout.
